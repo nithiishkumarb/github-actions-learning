@@ -1,0 +1,20 @@
+name: My first Github Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a greeting
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Show the current directory
+        run: pwd
+
+      - name: Show the runner user
+        run: whoami
